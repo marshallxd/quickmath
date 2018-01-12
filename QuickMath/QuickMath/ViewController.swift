@@ -19,7 +19,15 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
 
 }
 
+class CustomButton : UIButton{
+    @IBInspectable var adjustsTitleFontSizeToFitWidth: Bool = false {
+        didSet {
+            self.titleLabel?.adjustsFontSizeToFitWidth = adjustsTitleFontSizeToFitWidth
+        }
+    }
+}
