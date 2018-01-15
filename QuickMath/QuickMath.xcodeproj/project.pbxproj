@@ -7,64 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		49589EE120054064003C32F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49589EE020054064003C32F0 /* AppDelegate.swift */; };
-		49589EE320054064003C32F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49589EE220054064003C32F0 /* ViewController.swift */; };
-		49589EE620054064003C32F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49589EE420054064003C32F0 /* Main.storyboard */; };
-		49589EE820054064003C32F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49589EE720054064003C32F0 /* Assets.xcassets */; };
-		49589EEB20054064003C32F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49589EE920054064003C32F0 /* LaunchScreen.storyboard */; };
-		49589EF620054064003C32F0 /* QuickMathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49589EF520054064003C32F0 /* QuickMathTests.swift */; };
-		49589F0120054064003C32F0 /* QuickMathUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49589F0020054064003C32F0 /* QuickMathUITests.swift */; };
+		497C85D0200D4BB800E65DB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C85CF200D4BB800E65DB5 /* AppDelegate.swift */; };
+		497C85D2200D4BB800E65DB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C85D1200D4BB800E65DB5 /* ViewController.swift */; };
+		497C85D5200D4BB800E65DB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 497C85D3200D4BB800E65DB5 /* Main.storyboard */; };
+		497C85D7200D4BB800E65DB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 497C85D6200D4BB800E65DB5 /* Assets.xcassets */; };
+		497C85DA200D4BB800E65DB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 497C85D8200D4BB800E65DB5 /* LaunchScreen.storyboard */; };
+		497C85E5200D4BB800E65DB5 /* QuickMathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C85E4200D4BB800E65DB5 /* QuickMathTests.swift */; };
+		497C85F0200D4BB800E65DB5 /* QuickMathUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C85EF200D4BB800E65DB5 /* QuickMathUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		49589EF220054064003C32F0 /* PBXContainerItemProxy */ = {
+		497C85E1200D4BB800E65DB5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 49589ED520054064003C32F0 /* Project object */;
+			containerPortal = 497C85C4200D4BB800E65DB5 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 49589EDC20054064003C32F0;
+			remoteGlobalIDString = 497C85CB200D4BB800E65DB5;
 			remoteInfo = QuickMath;
 		};
-		49589EFD20054064003C32F0 /* PBXContainerItemProxy */ = {
+		497C85EC200D4BB800E65DB5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 49589ED520054064003C32F0 /* Project object */;
+			containerPortal = 497C85C4200D4BB800E65DB5 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 49589EDC20054064003C32F0;
+			remoteGlobalIDString = 497C85CB200D4BB800E65DB5;
 			remoteInfo = QuickMath;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		49589EDD20054064003C32F0 /* QuickMath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickMath.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		49589EE020054064003C32F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		49589EE220054064003C32F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = /Users/andrew/Documents/fromgit2/quickmath/QuickMath/QuickMath/ViewController.swift; sourceTree = "<absolute>"; };
-		49589EE520054064003C32F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		49589EE720054064003C32F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		49589EEA20054064003C32F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		49589EEC20054064003C32F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		49589EF120054064003C32F0 /* QuickMathTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickMathTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		49589EF520054064003C32F0 /* QuickMathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickMathTests.swift; sourceTree = "<group>"; };
-		49589EF720054064003C32F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		49589EFC20054064003C32F0 /* QuickMathUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickMathUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		49589F0020054064003C32F0 /* QuickMathUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickMathUITests.swift; sourceTree = "<group>"; };
-		49589F0220054064003C32F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		497C85CC200D4BB800E65DB5 /* QuickMath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickMath.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		497C85CF200D4BB800E65DB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		497C85D1200D4BB800E65DB5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		497C85D4200D4BB800E65DB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		497C85D6200D4BB800E65DB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		497C85D9200D4BB800E65DB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		497C85DB200D4BB800E65DB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		497C85E0200D4BB800E65DB5 /* QuickMathTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickMathTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		497C85E4200D4BB800E65DB5 /* QuickMathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickMathTests.swift; sourceTree = "<group>"; };
+		497C85E6200D4BB800E65DB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		497C85EB200D4BB800E65DB5 /* QuickMathUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickMathUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		497C85EF200D4BB800E65DB5 /* QuickMathUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickMathUITests.swift; sourceTree = "<group>"; };
+		497C85F1200D4BB800E65DB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		49589EDA20054064003C32F0 /* Frameworks */ = {
+		497C85C9200D4BB800E65DB5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		49589EEE20054064003C32F0 /* Frameworks */ = {
+		497C85DD200D4BB800E65DB5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		49589EF920054064003C32F0 /* Frameworks */ = {
+		497C85E8200D4BB800E65DB5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -74,53 +74,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		49589ED420054064003C32F0 = {
+		497C85C3200D4BB800E65DB5 = {
 			isa = PBXGroup;
 			children = (
-				49589EDF20054064003C32F0 /* QuickMath */,
-				49589EF420054064003C32F0 /* QuickMathTests */,
-				49589EFF20054064003C32F0 /* QuickMathUITests */,
-				49589EDE20054064003C32F0 /* Products */,
+				497C85CE200D4BB800E65DB5 /* QuickMath */,
+				497C85E3200D4BB800E65DB5 /* QuickMathTests */,
+				497C85EE200D4BB800E65DB5 /* QuickMathUITests */,
+				497C85CD200D4BB800E65DB5 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		49589EDE20054064003C32F0 /* Products */ = {
+		497C85CD200D4BB800E65DB5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				49589EDD20054064003C32F0 /* QuickMath.app */,
-				49589EF120054064003C32F0 /* QuickMathTests.xctest */,
-				49589EFC20054064003C32F0 /* QuickMathUITests.xctest */,
+				497C85CC200D4BB800E65DB5 /* QuickMath.app */,
+				497C85E0200D4BB800E65DB5 /* QuickMathTests.xctest */,
+				497C85EB200D4BB800E65DB5 /* QuickMathUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		49589EDF20054064003C32F0 /* QuickMath */ = {
+		497C85CE200D4BB800E65DB5 /* QuickMath */ = {
 			isa = PBXGroup;
 			children = (
-				49589EE020054064003C32F0 /* AppDelegate.swift */,
-				49589EE220054064003C32F0 /* ViewController.swift */,
-				49589EE420054064003C32F0 /* Main.storyboard */,
-				49589EE720054064003C32F0 /* Assets.xcassets */,
-				49589EE920054064003C32F0 /* LaunchScreen.storyboard */,
-				49589EEC20054064003C32F0 /* Info.plist */,
+				497C85CF200D4BB800E65DB5 /* AppDelegate.swift */,
+				497C85D1200D4BB800E65DB5 /* ViewController.swift */,
+				497C85D3200D4BB800E65DB5 /* Main.storyboard */,
+				497C85D6200D4BB800E65DB5 /* Assets.xcassets */,
+				497C85D8200D4BB800E65DB5 /* LaunchScreen.storyboard */,
+				497C85DB200D4BB800E65DB5 /* Info.plist */,
 			);
 			path = QuickMath;
 			sourceTree = "<group>";
 		};
-		49589EF420054064003C32F0 /* QuickMathTests */ = {
+		497C85E3200D4BB800E65DB5 /* QuickMathTests */ = {
 			isa = PBXGroup;
 			children = (
-				49589EF520054064003C32F0 /* QuickMathTests.swift */,
-				49589EF720054064003C32F0 /* Info.plist */,
+				497C85E4200D4BB800E65DB5 /* QuickMathTests.swift */,
+				497C85E6200D4BB800E65DB5 /* Info.plist */,
 			);
 			path = QuickMathTests;
 			sourceTree = "<group>";
 		};
-		49589EFF20054064003C32F0 /* QuickMathUITests */ = {
+		497C85EE200D4BB800E65DB5 /* QuickMathUITests */ = {
 			isa = PBXGroup;
 			children = (
-				49589F0020054064003C32F0 /* QuickMathUITests.swift */,
-				49589F0220054064003C32F0 /* Info.plist */,
+				497C85EF200D4BB800E65DB5 /* QuickMathUITests.swift */,
+				497C85F1200D4BB800E65DB5 /* Info.plist */,
 			);
 			path = QuickMathUITests;
 			sourceTree = "<group>";
@@ -128,13 +128,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		49589EDC20054064003C32F0 /* QuickMath */ = {
+		497C85CB200D4BB800E65DB5 /* QuickMath */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 49589F0520054064003C32F0 /* Build configuration list for PBXNativeTarget "QuickMath" */;
+			buildConfigurationList = 497C85F4200D4BB800E65DB5 /* Build configuration list for PBXNativeTarget "QuickMath" */;
 			buildPhases = (
-				49589ED920054064003C32F0 /* Sources */,
-				49589EDA20054064003C32F0 /* Frameworks */,
-				49589EDB20054064003C32F0 /* Resources */,
+				497C85C8200D4BB800E65DB5 /* Sources */,
+				497C85C9200D4BB800E65DB5 /* Frameworks */,
+				497C85CA200D4BB800E65DB5 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -142,72 +142,72 @@
 			);
 			name = QuickMath;
 			productName = QuickMath;
-			productReference = 49589EDD20054064003C32F0 /* QuickMath.app */;
+			productReference = 497C85CC200D4BB800E65DB5 /* QuickMath.app */;
 			productType = "com.apple.product-type.application";
 		};
-		49589EF020054064003C32F0 /* QuickMathTests */ = {
+		497C85DF200D4BB800E65DB5 /* QuickMathTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 49589F0820054064003C32F0 /* Build configuration list for PBXNativeTarget "QuickMathTests" */;
+			buildConfigurationList = 497C85F7200D4BB800E65DB5 /* Build configuration list for PBXNativeTarget "QuickMathTests" */;
 			buildPhases = (
-				49589EED20054064003C32F0 /* Sources */,
-				49589EEE20054064003C32F0 /* Frameworks */,
-				49589EEF20054064003C32F0 /* Resources */,
+				497C85DC200D4BB800E65DB5 /* Sources */,
+				497C85DD200D4BB800E65DB5 /* Frameworks */,
+				497C85DE200D4BB800E65DB5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				49589EF320054064003C32F0 /* PBXTargetDependency */,
+				497C85E2200D4BB800E65DB5 /* PBXTargetDependency */,
 			);
 			name = QuickMathTests;
 			productName = QuickMathTests;
-			productReference = 49589EF120054064003C32F0 /* QuickMathTests.xctest */;
+			productReference = 497C85E0200D4BB800E65DB5 /* QuickMathTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		49589EFB20054064003C32F0 /* QuickMathUITests */ = {
+		497C85EA200D4BB800E65DB5 /* QuickMathUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 49589F0B20054064003C32F0 /* Build configuration list for PBXNativeTarget "QuickMathUITests" */;
+			buildConfigurationList = 497C85FA200D4BB800E65DB5 /* Build configuration list for PBXNativeTarget "QuickMathUITests" */;
 			buildPhases = (
-				49589EF820054064003C32F0 /* Sources */,
-				49589EF920054064003C32F0 /* Frameworks */,
-				49589EFA20054064003C32F0 /* Resources */,
+				497C85E7200D4BB800E65DB5 /* Sources */,
+				497C85E8200D4BB800E65DB5 /* Frameworks */,
+				497C85E9200D4BB800E65DB5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				49589EFE20054064003C32F0 /* PBXTargetDependency */,
+				497C85ED200D4BB800E65DB5 /* PBXTargetDependency */,
 			);
 			name = QuickMathUITests;
 			productName = QuickMathUITests;
-			productReference = 49589EFC20054064003C32F0 /* QuickMathUITests.xctest */;
+			productReference = 497C85EB200D4BB800E65DB5 /* QuickMathUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		49589ED520054064003C32F0 /* Project object */ = {
+		497C85C4200D4BB800E65DB5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Andrew Marshall";
 				TargetAttributes = {
-					49589EDC20054064003C32F0 = {
+					497C85CB200D4BB800E65DB5 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
-					49589EF020054064003C32F0 = {
+					497C85DF200D4BB800E65DB5 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 49589EDC20054064003C32F0;
+						TestTargetID = 497C85CB200D4BB800E65DB5;
 					};
-					49589EFB20054064003C32F0 = {
+					497C85EA200D4BB800E65DB5 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 49589EDC20054064003C32F0;
+						TestTargetID = 497C85CB200D4BB800E65DB5;
 					};
 				};
 			};
-			buildConfigurationList = 49589ED820054064003C32F0 /* Build configuration list for PBXProject "QuickMath" */;
+			buildConfigurationList = 497C85C7200D4BB800E65DB5 /* Build configuration list for PBXProject "QuickMath" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -215,37 +215,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 49589ED420054064003C32F0;
-			productRefGroup = 49589EDE20054064003C32F0 /* Products */;
+			mainGroup = 497C85C3200D4BB800E65DB5;
+			productRefGroup = 497C85CD200D4BB800E65DB5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				49589EDC20054064003C32F0 /* QuickMath */,
-				49589EF020054064003C32F0 /* QuickMathTests */,
-				49589EFB20054064003C32F0 /* QuickMathUITests */,
+				497C85CB200D4BB800E65DB5 /* QuickMath */,
+				497C85DF200D4BB800E65DB5 /* QuickMathTests */,
+				497C85EA200D4BB800E65DB5 /* QuickMathUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		49589EDB20054064003C32F0 /* Resources */ = {
+		497C85CA200D4BB800E65DB5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49589EEB20054064003C32F0 /* LaunchScreen.storyboard in Resources */,
-				49589EE820054064003C32F0 /* Assets.xcassets in Resources */,
-				49589EE620054064003C32F0 /* Main.storyboard in Resources */,
+				497C85DA200D4BB800E65DB5 /* LaunchScreen.storyboard in Resources */,
+				497C85D7200D4BB800E65DB5 /* Assets.xcassets in Resources */,
+				497C85D5200D4BB800E65DB5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		49589EEF20054064003C32F0 /* Resources */ = {
+		497C85DE200D4BB800E65DB5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		49589EFA20054064003C32F0 /* Resources */ = {
+		497C85E9200D4BB800E65DB5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -255,59 +255,59 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		49589ED920054064003C32F0 /* Sources */ = {
+		497C85C8200D4BB800E65DB5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49589EE320054064003C32F0 /* ViewController.swift in Sources */,
-				49589EE120054064003C32F0 /* AppDelegate.swift in Sources */,
+				497C85D2200D4BB800E65DB5 /* ViewController.swift in Sources */,
+				497C85D0200D4BB800E65DB5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		49589EED20054064003C32F0 /* Sources */ = {
+		497C85DC200D4BB800E65DB5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49589EF620054064003C32F0 /* QuickMathTests.swift in Sources */,
+				497C85E5200D4BB800E65DB5 /* QuickMathTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		49589EF820054064003C32F0 /* Sources */ = {
+		497C85E7200D4BB800E65DB5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49589F0120054064003C32F0 /* QuickMathUITests.swift in Sources */,
+				497C85F0200D4BB800E65DB5 /* QuickMathUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		49589EF320054064003C32F0 /* PBXTargetDependency */ = {
+		497C85E2200D4BB800E65DB5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 49589EDC20054064003C32F0 /* QuickMath */;
-			targetProxy = 49589EF220054064003C32F0 /* PBXContainerItemProxy */;
+			target = 497C85CB200D4BB800E65DB5 /* QuickMath */;
+			targetProxy = 497C85E1200D4BB800E65DB5 /* PBXContainerItemProxy */;
 		};
-		49589EFE20054064003C32F0 /* PBXTargetDependency */ = {
+		497C85ED200D4BB800E65DB5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 49589EDC20054064003C32F0 /* QuickMath */;
-			targetProxy = 49589EFD20054064003C32F0 /* PBXContainerItemProxy */;
+			target = 497C85CB200D4BB800E65DB5 /* QuickMath */;
+			targetProxy = 497C85EC200D4BB800E65DB5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		49589EE420054064003C32F0 /* Main.storyboard */ = {
+		497C85D3200D4BB800E65DB5 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				49589EE520054064003C32F0 /* Base */,
+				497C85D4200D4BB800E65DB5 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		49589EE920054064003C32F0 /* LaunchScreen.storyboard */ = {
+		497C85D8200D4BB800E65DB5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				49589EEA20054064003C32F0 /* Base */,
+				497C85D9200D4BB800E65DB5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -315,7 +315,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		49589F0320054064003C32F0 /* Debug */ = {
+		497C85F2200D4BB800E65DB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -372,7 +372,7 @@
 			};
 			name = Debug;
 		};
-		49589F0420054064003C32F0 /* Release */ = {
+		497C85F3200D4BB800E65DB5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -422,11 +422,12 @@
 			};
 			name = Release;
 		};
-		49589F0620054064003C32F0 /* Debug */ = {
+		497C85F5200D4BB800E65DB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = QuickMath/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = andrewMarshall.QuickMath;
@@ -436,11 +437,12 @@
 			};
 			name = Debug;
 		};
-		49589F0720054064003C32F0 /* Release */ = {
+		497C85F6200D4BB800E65DB5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = QuickMath/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = andrewMarshall.QuickMath;
@@ -450,7 +452,7 @@
 			};
 			name = Release;
 		};
-		49589F0920054064003C32F0 /* Debug */ = {
+		497C85F8200D4BB800E65DB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -466,7 +468,7 @@
 			};
 			name = Debug;
 		};
-		49589F0A20054064003C32F0 /* Release */ = {
+		497C85F9200D4BB800E65DB5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -482,7 +484,7 @@
 			};
 			name = Release;
 		};
-		49589F0C20054064003C32F0 /* Debug */ = {
+		497C85FB200D4BB800E65DB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -497,7 +499,7 @@
 			};
 			name = Debug;
 		};
-		49589F0D20054064003C32F0 /* Release */ = {
+		497C85FC200D4BB800E65DB5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -515,43 +517,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		49589ED820054064003C32F0 /* Build configuration list for PBXProject "QuickMath" */ = {
+		497C85C7200D4BB800E65DB5 /* Build configuration list for PBXProject "QuickMath" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				49589F0320054064003C32F0 /* Debug */,
-				49589F0420054064003C32F0 /* Release */,
+				497C85F2200D4BB800E65DB5 /* Debug */,
+				497C85F3200D4BB800E65DB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		49589F0520054064003C32F0 /* Build configuration list for PBXNativeTarget "QuickMath" */ = {
+		497C85F4200D4BB800E65DB5 /* Build configuration list for PBXNativeTarget "QuickMath" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				49589F0620054064003C32F0 /* Debug */,
-				49589F0720054064003C32F0 /* Release */,
+				497C85F5200D4BB800E65DB5 /* Debug */,
+				497C85F6200D4BB800E65DB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		49589F0820054064003C32F0 /* Build configuration list for PBXNativeTarget "QuickMathTests" */ = {
+		497C85F7200D4BB800E65DB5 /* Build configuration list for PBXNativeTarget "QuickMathTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				49589F0920054064003C32F0 /* Debug */,
-				49589F0A20054064003C32F0 /* Release */,
+				497C85F8200D4BB800E65DB5 /* Debug */,
+				497C85F9200D4BB800E65DB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		49589F0B20054064003C32F0 /* Build configuration list for PBXNativeTarget "QuickMathUITests" */ = {
+		497C85FA200D4BB800E65DB5 /* Build configuration list for PBXNativeTarget "QuickMathUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				49589F0C20054064003C32F0 /* Debug */,
-				49589F0D20054064003C32F0 /* Release */,
+				497C85FB200D4BB800E65DB5 /* Debug */,
+				497C85FC200D4BB800E65DB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 49589ED520054064003C32F0 /* Project object */;
+	rootObject = 497C85C4200D4BB800E65DB5 /* Project object */;
 }

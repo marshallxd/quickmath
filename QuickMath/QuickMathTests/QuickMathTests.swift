@@ -2,7 +2,7 @@
 //  QuickMathTests.swift
 //  QuickMathTests
 //
-//  Created by Andrew Marshall on 1/9/18.
+//  Created by Andrew Marshall on 1/15/18.
 //  Copyright © 2018 Andrew Marshall. All rights reserved.
 //
 
