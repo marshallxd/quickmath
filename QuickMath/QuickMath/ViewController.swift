@@ -20,7 +20,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var outputLabel: UILabel!
     
-    @IBOutlet weak var warningLabel: UILabel!
+    @IBOutlet weak var WarningLabel: UILabel!
     
     var runningNumber = ""
     var leftValue = ""
@@ -46,6 +46,7 @@ class ViewController: UIViewController {
         currentOperation = .NULL
         outputLabel.text = "0"
         runningNumber = ""
+        WarningLabel.text = ""
     }
     
     @IBAction func dotPressed(_ sender: UIButton) {
@@ -99,11 +100,9 @@ class ViewController: UIViewController {
                     }
                 } else if currentOperation == .Divide{
                     if rightValue == "0" {
-                        warningLabel.text = "you can't divide by 0"
-                        result = ""
+                        result = "0"
                         runningNumber = ""
-                        leftValue = "0"
-                        currentOperation = .NULL
+                        WarningLabel.text = "Do not divide by zero, pls"
                     } else {
                     result = "\(Double(leftValue)! / Double(rightValue)!)"
                         if (Double(result)!.truncatingRemainder(dividingBy: 1) == 0){
