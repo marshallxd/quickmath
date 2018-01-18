@@ -269,6 +269,9 @@
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="system" pointSize="46"/>
                                 </variation>
+                                <connections>
+                                    <action selector="plusMinus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F7z-N4-YVZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lEW-Qp-TBj">
                                 <rect key="frame" x="211" y="403" width="88" height="55"/>
@@ -281,6 +284,9 @@
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="system" pointSize="46"/>
                                 </variation>
+                                <connections>
+                                    <action selector="percentegePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HOo-OP-xKb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXi-oX-nyF">
                                 <rect key="frame" x="308" y="403" width="88" height="55"/>

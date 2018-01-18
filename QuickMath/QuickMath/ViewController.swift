@@ -9,11 +9,12 @@
 import UIKit
 
 enum Operation:String{
-    case Add      = "+"
-    case Minus    = "-"
-    case Divide   = "/"
-    case Multiply = "*"
-    case NULL    = "Null"
+    case Add       = "+"
+    case Minus     = "-"
+    case Divide    = "/"
+    case Multiply  = "*"
+    case NULL      = "Null"
+    case Percentege = "%"
 }
 
 class ViewController: UIViewController {
@@ -30,6 +31,7 @@ class ViewController: UIViewController {
     var result = ""
     var currentOperation:Operation = .NULL
     var memNumber = ""
+    var percValue = ""
     
 ///////////////////////////////////////////////////////////////////
     //Number pressed
@@ -50,6 +52,7 @@ class ViewController: UIViewController {
         outputLabel.text = "0"
         runningNumber = ""
         WarningLabel.text = ""
+        
     }
     // Dot pressed
     @IBAction func dotPressed(_ sender: UIButton) {
@@ -87,7 +90,6 @@ class ViewController: UIViewController {
         } else {
             runningNumber = String(runningNumber.dropLast())
             outputLabel.text = runningNumber
-            
         }
       
     }
@@ -106,7 +108,21 @@ class ViewController: UIViewController {
         mcLabel.text = ""
         memNumber = ""
     }
+    // Plus/Minus
+    @IBAction func plusMinus(_ sender: UIButton) {
+        if runningNumber == ""{
+            runningNumber = "\(Double(leftValue)! * (-1))"
+        }
+        runningNumber = "\(Double(runningNumber)! * (-1))"
+        outputLabel.text = runningNumber
+    }
     
+    @IBAction func percentegePressed(_ sender: UIButton) {
+        operation(operation: .Percentege)
+    }
+    
+    
+///////////////////////////////////////////////////////////////////////
     // OPERATIONS
     func operation(operation: Operation){
         if currentOperation != .NULL {
@@ -140,6 +156,9 @@ class ViewController: UIViewController {
                             result = "\(Int(Double(result)!))"
                         }
                     }
+                }else if currentOperation == .Percentege {
+                    percValue = "\((Double(leftValue)! * (Double(rightValue)!)/100))"
+                    result = percValue
                 }
                 leftValue = result
                 outputLabel.text = result
