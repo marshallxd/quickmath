@@ -22,11 +22,14 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var WarningLabel: UILabel!
     
+    @IBOutlet weak var mcLabel: UILabel!
+    
     var runningNumber = ""
     var leftValue = ""
     var rightValue = ""
     var result = ""
     var currentOperation:Operation = .NULL
+    var memNumber = ""
     
 ///////////////////////////////////////////////////////////////////
     //Number pressed
@@ -48,13 +51,14 @@ class ViewController: UIViewController {
         runningNumber = ""
         WarningLabel.text = ""
     }
-    
+    // Dot pressed
     @IBAction func dotPressed(_ sender: UIButton) {
         if runningNumber.count <= 12 {
             runningNumber += "."
             outputLabel.text = runningNumber
         }
     }
+    
     // Plus(add) +++++
     @IBAction func addPressed(_ sender: UIButton) {
         operation(operation: .Add)
@@ -71,9 +75,36 @@ class ViewController: UIViewController {
     @IBAction func dividePressed(_ sender: UIButton) {
         operation(operation: .Divide)
     }
-    
+    //Equal
     @IBAction func equalPressed(_ sender: UIButton) {
         operation(operation: currentOperation)
+    }
+    //Remove last
+    @IBAction func dropLastChar(_ sender: UIButton) {
+        if runningNumber == ""{
+            outputLabel.text = "0"
+            runningNumber = ""
+        } else {
+            runningNumber = String(runningNumber.dropLast())
+            outputLabel.text = runningNumber
+            
+        }
+      
+    }
+    // Mem Number
+    @IBAction func memorisePlus(_ sender: UIButton) {
+        mcLabel.text = outputLabel.text
+        memNumber = runningNumber
+    }
+    // Print mem
+    @IBAction func printMemorised(_ sender: UIButton) {
+        outputLabel.text = mcLabel.text
+        runningNumber = memNumber
+    }
+    // Clean mem
+    @IBAction func clearMem(_ sender: UIButton) {
+        mcLabel.text = ""
+        memNumber = ""
     }
     
     // OPERATIONS

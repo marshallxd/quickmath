@@ -254,6 +254,9 @@
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 </variation>
+                                <connections>
+                                    <action selector="dropLastChar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4EX-2h-d4Z"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urY-P8-pmr">
                                 <rect key="frame" x="114" y="403" width="88" height="55"/>
@@ -305,6 +308,9 @@
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="system" pointSize="46"/>
                                 </variation>
+                                <connections>
+                                    <action selector="clearMem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KUK-3e-ryc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dys-X9-7nz">
                                 <rect key="frame" x="211" y="338" width="88" height="55"/>
@@ -317,6 +323,9 @@
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="system" pointSize="46"/>
                                 </variation>
+                                <connections>
+                                    <action selector="printMemorised:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CK4-Wo-pce"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="puE-zu-aqD">
                                 <rect key="frame" x="309" y="338" width="88" height="55"/>
@@ -329,6 +338,9 @@
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="system" pointSize="46"/>
                                 </variation>
+                                <connections>
+                                    <action selector="memorisePlus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fvu-eb-fGV"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="p8D-Lc-JM2">
                                 <rect key="frame" x="20" y="141" width="374" height="167"/>
@@ -362,12 +374,20 @@
                                     <action selector="clearPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yeF-Kc-2v7"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLV-eR-yzr">
+                                <rect key="frame" x="20" y="278" width="377" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="WarningLabel" destination="fNn-SC-MIG" id="GCZ-96-XCM"/>
+                        <outlet property="mcLabel" destination="rLV-eR-yzr" id="pc8-5w-B8l"/>
                         <outlet property="outputLabel" destination="p8D-Lc-JM2" id="sQf-HR-g1m"/>
                     </connections>
                 </viewController>
