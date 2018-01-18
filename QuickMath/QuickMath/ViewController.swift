@@ -32,6 +32,7 @@ class ViewController: UIViewController {
     var currentOperation:Operation = .NULL
     var memNumber = ""
     var percValue = ""
+    var percValue2 = ""
     
 ///////////////////////////////////////////////////////////////////
     //Number pressed
@@ -157,8 +158,9 @@ class ViewController: UIViewController {
                         }
                     }
                 }else if currentOperation == .Percentege {
-                    percValue = "\((Double(leftValue)! * (Double(rightValue)!)/100))"
-                    result = percValue
+                    percValue = "\(Double(leftValue)! * (Double(rightValue))!)"
+                    percValue2 = "\(Double(percValue)! / Double(100))"
+                    result = percValue2
                 }
                 leftValue = result
                 outputLabel.text = result
