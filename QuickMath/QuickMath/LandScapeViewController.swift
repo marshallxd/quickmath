@@ -1,25 +1,16 @@
 //
-//  ViewController.swift
+//  LandScapeViewController.swift
 //  QuickMath
 //
-//  Created by Andrew Marshall on 1/15/18.
+//  Created by Andrew Marshall on 1/23/18.
 //  Copyright © 2018 Andrew Marshall. All rights reserved.
 //
 
 import UIKit
+var rez = ""
 
-enum Operation:String{
-    case Add       = "+"
-    case Minus     = "-"
-    case Divide    = "/"
-    case Multiply  = "*"
-    case NULL      = "Null"
-    case Percentege = "%"
-}
-
-
-class ViewController: UIViewController {
-    
+class LandScapeViewController: UIViewController {
+ 
     @IBOutlet weak var outputLabel: UILabel!
     
     @IBOutlet weak var WarningLabel: UILabel!
@@ -37,8 +28,8 @@ class ViewController: UIViewController {
     
     /////////////////////////// Landscape View ////////////////////////
     override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
-        if UIDevice.current.orientation.isLandscape == true {
-            performSegue(withIdentifier: "NextView", sender: self)
+        if UIDevice.current.orientation.isPortrait == true {
+            performSegue(withIdentifier: "NextView2", sender: self)
         }
     }
     
@@ -182,11 +173,10 @@ class ViewController: UIViewController {
         }
     }
     /////////////////////////////////////////////////////////////////////
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        outputLabel.text = "0"
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Do any additional setup after loading the view.
     }
     override func viewDidAppear(_ animated: Bool) {
         outputLabel.text = rez
@@ -197,7 +187,16 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
 
 }
-

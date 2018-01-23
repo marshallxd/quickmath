@@ -14,6 +14,7 @@
 		497C85DA200D4BB800E65DB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 497C85D8200D4BB800E65DB5 /* LaunchScreen.storyboard */; };
 		497C85E5200D4BB800E65DB5 /* QuickMathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C85E4200D4BB800E65DB5 /* QuickMathTests.swift */; };
 		497C85F0200D4BB800E65DB5 /* QuickMathUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C85EF200D4BB800E65DB5 /* QuickMathUITests.swift */; };
+		49C8BBCB20179BC6004060A7 /* LandScapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C8BBCA20179BC6004060A7 /* LandScapeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		497C85EB200D4BB800E65DB5 /* QuickMathUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickMathUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		497C85EF200D4BB800E65DB5 /* QuickMathUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickMathUITests.swift; sourceTree = "<group>"; };
 		497C85F1200D4BB800E65DB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49C8BBCA20179BC6004060A7 /* LandScapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandScapeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				497C85CF200D4BB800E65DB5 /* AppDelegate.swift */,
 				497C85D1200D4BB800E65DB5 /* ViewController.swift */,
+				49C8BBCA20179BC6004060A7 /* LandScapeViewController.swift */,
 				497C85D3200D4BB800E65DB5 /* Main.storyboard */,
 				497C85D6200D4BB800E65DB5 /* Assets.xcassets */,
 				497C85D8200D4BB800E65DB5 /* LaunchScreen.storyboard */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49C8BBCB20179BC6004060A7 /* LandScapeViewController.swift in Sources */,
 				497C85D2200D4BB800E65DB5 /* ViewController.swift in Sources */,
 				497C85D0200D4BB800E65DB5 /* AppDelegate.swift in Sources */,
 			);
