@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var outputLabel: UILabel!
     
+    
     @IBOutlet weak var WarningLabel: UILabel!
     
     @IBOutlet weak var mcLabel: UILabel!
@@ -32,16 +33,7 @@ class ViewController: UIViewController {
     var result = ""
     var currentOperation:Operation = .NULL
     var memNumber = ""
-    var percValue = ""
-    
-    
-    /////////////////////////// Landscape View ////////////////////////
-    override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
-        if UIDevice.current.orientation.isLandscape == true {
-            performSegue(withIdentifier: "NextView", sender: self)
-        }
-    }
-    
+    var percValue = ""  
     
     ///////////////////////////////////////////////////////////////////
     //Number pressed
@@ -172,7 +164,6 @@ class ViewController: UIViewController {
                 }
                 leftValue = result
                 outputLabel.text = result
-                rez = result
             }
             currentOperation = operation
         }else{
@@ -187,10 +178,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         outputLabel.text = "0"
         // Do any additional setup after loading the view, typically from a nib.
-    }
-    override func viewDidAppear(_ animated: Bool) {
-        outputLabel.text = rez
-        runningNumber = rez
     }
 
     override func didReceiveMemoryWarning() {
