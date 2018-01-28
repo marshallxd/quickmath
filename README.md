@@ -26,7 +26,7 @@ Supported options
   </tr>
   <tr align="left">
     <td>%</td>
-    <td>Modulo</td>
+    <td>Percentage</td>
   </tr>
   <tr align="left">
     <td>xˆ2</td>
