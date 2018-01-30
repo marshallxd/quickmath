@@ -57,18 +57,24 @@ class ViewController: UIViewController {
         result = ""
         currentOperation = .NULL
         outputLabel.text = "0"
-        runningNumber = "0"
+        runningNumber = ""
         WarningLabel.text = ""
         
     }
     // Dot pressed
     @IBAction func dotPressed(_ sender: UIButton) {
-        if runningNumber.count <= 12 {
-            runningNumber += "."
-            outputLabel.text = runningNumber
+        if (outputLabel.text?.count == 0){
+            outputLabel.text = "0."
+            runningNumber = "0."
+        }
+        else{
+            if outputLabel.text!.range(of: ".") == nil{
+                outputLabel.text = outputLabel.text! + "."
+                runningNumber += "."
+            }
         }
     }
-    
+
     // Plus(add) +++++
     @IBAction func addPressed(_ sender: UIButton) {
         operation(operation: .Add)
@@ -90,8 +96,8 @@ class ViewController: UIViewController {
         operation(operation: currentOperation)
     }
     //Remove last
-    @IBAction func dropLastChar(_ sender: UIButton) {
-        if runningNumber == "" {
+    @IBAction func backspace(_ sender: UIButton) {
+        if (outputLabel.text?.count == 1){
             outputLabel.text = "0"
             runningNumber = ""
         } else {
@@ -117,7 +123,12 @@ class ViewController: UIViewController {
     // Plus/Minus
     @IBAction func plusMinus(_ sender: UIButton) {
         if runningNumber == ""{
-            runningNumber = "\(Double(leftValue)! * (-1))"
+            runningNumber = leftValue
+            if runningNumber == ""{
+                WarningLabel.text = "Enter number"
+            } else {
+                runningNumber = "\(Double(runningNumber)! * (-1))"
+            }
         }
         runningNumber = "\(Double(runningNumber)! * (-1))"
         outputLabel.text = runningNumber
@@ -134,7 +145,13 @@ class ViewController: UIViewController {
     // ln
     @IBAction func logPressed(_ sender: UIButton) {
         if runningNumber == ""{
-            WarningLabel.text = "Enter number"
+            runningNumber = leftValue
+            if runningNumber == ""{
+                WarningLabel.text = "Enter number"
+            } else {
+                runningNumber = "\(log(Double(runningNumber)!))"
+                outputLabel.text = runningNumber
+            }
         } else {
         runningNumber = "\(log(Double(runningNumber)!))"
         outputLabel.text = runningNumber
@@ -143,17 +160,28 @@ class ViewController: UIViewController {
     //sqrt
     @IBAction func sqrtPressed(_ sender: UIButton) {
         if runningNumber == ""{
-            WarningLabel.text = "Enter number"
+            runningNumber = leftValue
+            if runningNumber == ""{
+                WarningLabel.text = "Enter number"
+            } else {
+                outputLabel.text = runningNumber
+                runningNumber = "\(sqrt(Double(runningNumber)!))"
+            }
         } else {
         runningNumber = "\(sqrt(Double(runningNumber)!))"
-        leftValue = runningNumber
         outputLabel.text = runningNumber
         }
     }
     //log
     @IBAction func log2Pressed(_ sender: UIButton) {
         if runningNumber == ""{
-            WarningLabel.text = "Enter number"
+            runningNumber = leftValue
+            if runningNumber == ""{
+                WarningLabel.text = "Enter number"
+            } else {
+                runningNumber = "\(log2(Double(runningNumber)!))"
+                outputLabel.text = runningNumber
+            }
         }else {
         runningNumber = "\(log2(Double(runningNumber)!))"
         outputLabel.text = runningNumber
@@ -162,7 +190,13 @@ class ViewController: UIViewController {
     // 10ˆx
     @IBAction func timesX(_ sender: UIButton) {
         if runningNumber == ""{
-            WarningLabel.text = "Enter number"
+            runningNumber = leftValue
+            if runningNumber == ""{
+                WarningLabel.text = "Enter number"
+            } else {
+                runningNumber = "\(pow(10, Double(runningNumber)!))"
+                outputLabel.text = runningNumber
+            }
         } else {
         runningNumber = "\(pow(10, Double(runningNumber)!))"
         outputLabel.text = runningNumber
@@ -175,7 +209,13 @@ class ViewController: UIViewController {
     //xˆ2
     @IBAction func pow2(_ sender: UIButton) {
         if runningNumber == ""{
-            WarningLabel.text = "Enter number"
+            runningNumber = leftValue
+            if runningNumber == ""{
+                WarningLabel.text = "Enter number"
+            } else {
+                runningNumber = "\(pow(Double(runningNumber)!,2))"
+                outputLabel.text = runningNumber
+            }
         } else {
         runningNumber = "\(pow(Double(runningNumber)!,2))"
         outputLabel.text = runningNumber
@@ -184,7 +224,13 @@ class ViewController: UIViewController {
     // factorial
     @IBAction func functorial(_ sender: UIButton) {
         if runningNumber == ""{
-            WarningLabel.text = "Enter number"
+            runningNumber = leftValue
+            if runningNumber == ""{
+                WarningLabel.text = "Enter number"
+            } else {
+                runningNumber = "\(factorial(n: Int(runningNumber)!))"
+                outputLabel.text = runningNumber
+            }
         } else {
         runningNumber = "\(factorial(n: Int(runningNumber)!))"
         outputLabel.text = runningNumber
@@ -193,9 +239,16 @@ class ViewController: UIViewController {
     //abs
     @IBAction func absPressed(_ sender: UIButton) {
         if runningNumber == "" {
-        WarningLabel.text = "Enter number"
+        runningNumber = leftValue
+            if runningNumber == ""{
+                WarningLabel.text = "Enter number"
+            } else {
+                runningNumber = "\(abs(Double(runningNumber)!))"
+                outputLabel.text = runningNumber
+                
+            }
         } else {
-            runningNumber = "\(abs(Int(runningNumber)!))"
+            runningNumber = "\(abs(Double(runningNumber)!))"
             outputLabel.text = runningNumber
         }
     }
@@ -203,52 +256,83 @@ class ViewController: UIViewController {
     @IBAction func modPressed(_ sender: UIButton) {
         operation(operation: .mod1)
     }
-    //dec (convert only from bin)...
-    @IBAction func decPressed(_ sender: UIButton) {
-        if runningNumber == "" {
-           WarningLabel.text = "Enter number"
-        } else {
-        tempValue = Int(runningNumber, radix: 2 )!
-        runningNumber = String(tempValue)
-        outputLabel.text = String(tempValue)
-        }
-    }
-    //binary
-    @IBAction func binPressed(_ sender: UIButton) {
+ 
+    //asin
+    @IBAction func asinPressed(_ sender: UIButton) {
         if runningNumber == ""{
-            WarningLabel.text = "Enter number"
+            runningNumber = leftValue
+            if runningNumber == ""{
+                WarningLabel.text = "Enter number"
+            } else {
+                runningNumber = String(asin(Double(runningNumber)!))
+                outputLabel.text = runningNumber
+            }
         } else{
-            tempValue2 = String(Int(runningNumber)!, radix: 2)
-            runningNumber = tempValue2
-            outputLabel.text = tempValue2
+            runningNumber = String(asin(Double(runningNumber)!))
+            outputLabel.text = runningNumber
         }
     }
-    //hex
-    @IBAction func hexPressed(_ sender: UIButton) {
+    
+    //acos
+    @IBAction func acos(_ sender: UIButton) {
         if runningNumber == ""{
-            WarningLabel.text = "Enter number"
+            runningNumber = leftValue
+            if runningNumber == ""{
+                WarningLabel.text = "Enter number"
+            } else {
+                runningNumber = String(Darwin.acos(Double(runningNumber)!))
+                outputLabel.text = runningNumber
+            }
         } else{
-            tempValue = Int(runningNumber, radix: 16 )!
-            runningNumber = String(tempValue)
-            outputLabel.text = String(tempValue)
+            runningNumber = String(Darwin.acos(Double(runningNumber)!))
+            outputLabel.text = runningNumber
         }
     }
-    //oct
-    @IBAction func octPressed(_ sender: UIButton) {
+    
+    //atan
+    @IBAction func atanPressed(_ sender: UIButton) {
         if runningNumber == ""{
-            WarningLabel.text = "Enter number"
+            runningNumber = leftValue
+            if runningNumber == ""{
+                WarningLabel.text = "Enter number"
+            } else {
+                runningNumber = String(atan(Double(runningNumber)!))
+                outputLabel.text = runningNumber
+            }
         } else{
-            tempValue2 = String(Int(runningNumber)!, radix: 8)
-            runningNumber = tempValue2
-            outputLabel.text = tempValue2
+            runningNumber = String(atan(Double(runningNumber)!))
+            outputLabel.text = runningNumber
         }
     }
+    
+    //actan
+    @IBAction func actanPressed(_ sender: UIButton) {
+        if runningNumber == ""{
+            runningNumber = leftValue
+            if runningNumber == ""{
+                WarningLabel.text = "Enter number"
+            } else {
+                runningNumber = String((1/atan(Double(runningNumber)!)))
+                outputLabel.text = runningNumber
+            }
+        } else{
+            runningNumber = String((1/atan(Double(runningNumber)!)))
+            outputLabel.text = runningNumber
+        }
+    }
+    
     ///////////////////////////////trigonometric functions (in rad)/////////////////
     
     //sinus
     @IBAction func sinPressed(_ sender: UIButton) {
         if runningNumber == ""{
-            WarningLabel.text = "Enter number"
+           runningNumber = leftValue
+            if runningNumber == ""{
+                WarningLabel.text = "Enter number"
+            } else {
+                    runningNumber = String(sin(Double(runningNumber)!))
+                    outputLabel.text = runningNumber
+            }
         } else{
             runningNumber = String(sin(Double(runningNumber)!))
             outputLabel.text = runningNumber
@@ -257,7 +341,14 @@ class ViewController: UIViewController {
     //cosinus
     @IBAction func cosPressed(_ sender: UIButton) {
         if runningNumber == ""{
-            WarningLabel.text = "Enter number"
+            runningNumber = leftValue
+            if runningNumber == ""{
+                WarningLabel.text = "Enter number"
+            } else {
+                    runningNumber = String(cos(Double(runningNumber)!))
+                    outputLabel.text = runningNumber
+                
+            }
         } else{
             runningNumber = String(cos(Double(runningNumber)!))
             outputLabel.text = runningNumber
@@ -266,7 +357,13 @@ class ViewController: UIViewController {
     //tan
     @IBAction func tanPressed(_ sender: UIButton) {
         if runningNumber == ""{
-            WarningLabel.text = "Enter number"
+            runningNumber = leftValue
+            if runningNumber == ""{
+                WarningLabel.text = "Enter number"
+            } else {
+                    runningNumber = String(tan(Double(runningNumber)!))
+                    outputLabel.text = runningNumber
+            }
         } else{
             runningNumber = String(tan(Double(runningNumber)!))
             outputLabel.text = runningNumber
@@ -275,9 +372,15 @@ class ViewController: UIViewController {
     //ctan
     @IBAction func ctanPressed(_ sender: UIButton) {
         if runningNumber == ""{
-            WarningLabel.text = "Enter number"
+            runningNumber = leftValue
+            if runningNumber == ""{
+                WarningLabel.text = "Enter number"
+            } else {
+                    runningNumber = String((1/atan(Double(runningNumber)!)))
+                    outputLabel.text = runningNumber
+            }
         } else{
-            runningNumber = String((1/tan(Double(runningNumber)!)))
+            runningNumber = String((1/atan(Double(runningNumber)!)))
             outputLabel.text = runningNumber
         }
     }
@@ -292,40 +395,44 @@ class ViewController: UIViewController {
                 
                 if currentOperation == .Add {
                     result = "\(Double(leftValue)! + Double(rightValue)!)"
-                    if (Double(result)!.truncatingRemainder(dividingBy: 1) == 0){
-                        result = "\(Int(Double(result)!))"
-                    }
+                    result = removeZeroFromEnd(n: Double(result)!)
+                    currentOperation = .NULL
                 } else if currentOperation == .Minus{
+                    if leftValue == ""{
+                        result = "\(0 - Double(rightValue)!)"
+                    } else {
                     result = "\(Double(leftValue)! - Double(rightValue)!)"
-                    if (Double(result)!.truncatingRemainder(dividingBy: 1) == 0){
-                        result = "\(Int(Double(result)!))"
-                    }
+                    result = removeZeroFromEnd(n: Double(result)!)
+                }
+                    currentOperation = .NULL
                 } else if currentOperation == .Multiply{
                     result = "\(Double(leftValue)! * Double(rightValue)!)"
-                    if (Double(result)!.truncatingRemainder(dividingBy: 1) == 0){
-                        result = "\(Int(Double(result)!))"
-                    }
-                } else if currentOperation == .Divide{ //devision 
+                    result = removeZeroFromEnd(n: Double(result)!)
+                    currentOperation = .NULL
+                } else if currentOperation == .Divide{
                     if rightValue == "0" {
                         result = "0"
                         runningNumber = ""
                         WarningLabel.text = "Do not divide by zero, pls"
+                        currentOperation = .NULL
                     } else {
                         result = "\(Double(leftValue)! / Double(rightValue)!)"
-                        if (Double(result)!.truncatingRemainder(dividingBy: 1) == 0){
-                            result = "\(Int(Double(result)!))"
-                        }
+                        result = removeZeroFromEnd(n: Double(result)!)
                     }
+                    currentOperation = .NULL
                 }else if currentOperation == .Percentege {
                     percValue = "\((Double(leftValue)! * (Double(rightValue)!)/100))"
                     result = percValue
                 } else if currentOperation == .Stepinb {
                         result = "\(pow(Double(leftValue)!,Double(rightValue)!))"
+                        result = removeZeroFromEnd(n: Double(result)!)
+                    currentOperation = .NULL
                 } else if currentOperation == .mod1 {
                     result = "\(Double(leftValue)!.truncatingRemainder(dividingBy: Double(rightValue)!))"
+                    result = removeZeroFromEnd(n: Double(result)!)
+                    currentOperation = .NULL
                 }
                 leftValue = result
-                runningNumber = result
                 outputLabel.text = result
             }
             currentOperation = operation
@@ -345,11 +452,18 @@ class ViewController: UIViewController {
         }
     }
     
+    func removeZeroFromEnd(n: Double) -> String {
+        if (Double(result)!.truncatingRemainder(dividingBy: 1) == 0){
+            result = "\(Int(Double(result)!))"
+        }
+        return result
+    }
+    
     ////////////////////////////////////////////////////////////////////
     override func viewDidLoad() {
         super.viewDidLoad()
         outputLabel.text = "0"
-        runningNumber = "0"
+        runningNumber = ""
         // Do any additional setup after loading the view, typically from a nib.
     }
 

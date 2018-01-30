@@ -1,6 +1,6 @@
 QuickMath
 ==========
-A calc made with swift and xcode
+A calc made with swift 4 and xcode 9.2
 
 Supported options
 -------------------
@@ -65,7 +65,7 @@ Supported options
     <td>Natural logarithm</td>
   </tr>
 </table>
-
+And many more!!!
 How to use it
 -------------
 You simply press the buttons and hope for it to work...
