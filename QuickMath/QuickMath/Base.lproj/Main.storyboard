@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="landscape">
+    <device id="retina5_5" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -17,11 +17,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QuickMath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleAspectFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label verifyAmbiguity="ignoreSizes" opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNn-SC-MIG">
-                                <rect key="frame" x="74" y="35" width="664" height="0.0"/>
+                                <rect key="frame" x="192" y="29" width="352" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="gME-0D-dJO"/>
                                 </constraints>
@@ -43,13 +43,13 @@
                                 </variation>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="AjG-sd-Ccq">
-                                <rect key="frame" x="17" y="381" width="337" height="370"/>
+                                <rect key="frame" x="17" y="339" width="376" height="370"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="LqZ-hI-atS">
-                                        <rect key="frame" x="0.0" y="0.0" width="337" height="55"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="376" height="55"/>
                                         <subviews>
                                             <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tPn-TA-fy3">
-                                                <rect key="frame" x="0.0" y="0.0" width="78.333333333333329" height="55"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="88" height="55"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="C">
@@ -63,7 +63,7 @@
                                                 </connections>
                                             </button>
                                             <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlP-X3-86N">
-                                                <rect key="frame" x="86.333333333333343" y="0.0" width="78.333333333333343" height="55"/>
+                                                <rect key="frame" x="96" y="0.0" width="88" height="55"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="MC">
@@ -77,7 +77,7 @@
                                                 </connections>
                                             </button>
                                             <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dys-X9-7nz">
-                                                <rect key="frame" x="172.66666666666666" y="0.0" width="78" height="55"/>
+                                                <rect key="frame" x="192" y="0.0" width="88" height="55"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="MR">
@@ -91,7 +91,7 @@
                                                 </connections>
                                             </button>
                                             <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="54" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="puE-zu-aqD">
-                                                <rect key="frame" x="258.66666666666669" y="0.0" width="78.333333333333314" height="55"/>
+                                                <rect key="frame" x="288" y="0.0" width="88" height="55"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="M+">
@@ -117,10 +117,10 @@
                                         </variation>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4NU-PZ-EKN">
-                                        <rect key="frame" x="0.0" y="63" width="337" height="55"/>
+                                        <rect key="frame" x="0.0" y="63" width="376" height="55"/>
                                         <subviews>
                                             <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4xx-ar-ecM">
-                                                <rect key="frame" x="0.0" y="0.0" width="78.333333333333329" height="55"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="88" height="55"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                                 <state key="normal" title="⌫">
@@ -134,7 +134,7 @@
                                                 </connections>
                                             </button>
                                             <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urY-P8-pmr">
-                                                <rect key="frame" x="86.333333333333343" y="0.0" width="78.333333333333343" height="55"/>
+                                                <rect key="frame" x="96" y="0.0" width="88" height="55"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="√x">
@@ -148,7 +148,7 @@
                                                 </connections>
                                             </button>
                                             <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lEW-Qp-TBj">
-                                                <rect key="frame" x="172.66666666666666" y="0.0" width="78" height="55"/>
+                                                <rect key="frame" x="192" y="0.0" width="88" height="55"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="%">
@@ -162,7 +162,7 @@
                                                 </connections>
                                             </button>
                                             <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXi-oX-nyF">
-                                                <rect key="frame" x="258.66666666666669" y="0.0" width="78.333333333333314" height="55"/>
+                                                <rect key="frame" x="288" y="0.0" width="88" height="55"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="÷">
@@ -188,10 +188,10 @@
                                         </variation>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qsz-2V-FBZ">
-                                        <rect key="frame" x="0.0" y="126" width="337" height="55"/>
+                                        <rect key="frame" x="0.0" y="126" width="376" height="55"/>
                                         <subviews>
                                             <button verifyAmbiguity="ignoreSizes" opaque="NO" tag="8" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZW9-Kd-En1">
-                                                <rect key="frame" x="0.0" y="0.0" width="78.333333333333329" height="55"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="88" height="55"/>
                                                 <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="7">
@@ -205,7 +205,7 @@
                                                 </connections>
                                             </button>
                                             <button verifyAmbiguity="ignoreSizes" opaque="NO" tag="9" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ueS-2m-Wlz">
-                                                <rect key="frame" x="86.333333333333343" y="0.0" width="78.333333333333343" height="55"/>
+                                                <rect key="frame" x="96" y="0.0" width="88" height="55"/>
                                                 <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="8">
@@ -219,7 +219,7 @@
                                                 </connections>
                                             </button>
                                             <button verifyAmbiguity="ignoreSizes" opaque="NO" tag="10" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TU9-94-g8x">
-                                                <rect key="frame" x="172.66666666666666" y="0.0" width="78" height="55"/>
+                                                <rect key="frame" x="192" y="0.0" width="88" height="55"/>
                                                 <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="9">
@@ -233,7 +233,7 @@
                                                 </connections>
                                             </button>
                                             <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adC-2w-Md8">
-                                                <rect key="frame" x="258.66666666666669" y="0.0" width="78.333333333333314" height="55"/>
+                                                <rect key="frame" x="288" y="0.0" width="88" height="55"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="✕">
@@ -259,10 +259,10 @@
                                         </variation>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CX2-7n-xMb">
-                                        <rect key="frame" x="0.0" y="189" width="337" height="55"/>
+                                        <rect key="frame" x="0.0" y="189" width="376" height="55"/>
                                         <subviews>
                                             <button verifyAmbiguity="ignoreSizes" opaque="NO" tag="5" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBS-Ks-MNF">
-                                                <rect key="frame" x="0.0" y="0.0" width="78.333333333333329" height="55"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="88" height="55"/>
                                                 <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="4">
@@ -276,7 +276,7 @@
                                                 </connections>
                                             </button>
                                             <button verifyAmbiguity="ignoreSizes" opaque="NO" tag="6" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="56" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2c-KZ-UOX">
-                                                <rect key="frame" x="86.333333333333343" y="0.0" width="78.333333333333343" height="55"/>
+                                                <rect key="frame" x="96" y="0.0" width="88" height="55"/>
                                                 <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="5">
@@ -290,7 +290,7 @@
                                                 </connections>
                                             </button>
                                             <button verifyAmbiguity="ignoreSizes" opaque="NO" tag="7" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsT-H8-wFS">
-                                                <rect key="frame" x="172.66666666666666" y="0.0" width="78" height="55"/>
+                                                <rect key="frame" x="192" y="0.0" width="88" height="55"/>
                                                 <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="6">
@@ -304,7 +304,7 @@
                                                 </connections>
                                             </button>
                                             <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyz-Cb-Wmf">
-                                                <rect key="frame" x="258.66666666666669" y="0.0" width="78.333333333333314" height="55"/>
+                                                <rect key="frame" x="288" y="0.0" width="88" height="55"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="−">
@@ -330,10 +330,10 @@
                                         </variation>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GjZ-yK-hwl">
-                                        <rect key="frame" x="0.0" y="252" width="337" height="55"/>
+                                        <rect key="frame" x="0.0" y="252" width="376" height="55"/>
                                         <subviews>
                                             <button verifyAmbiguity="ignoreSizes" opaque="NO" tag="2" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYJ-6V-snM">
-                                                <rect key="frame" x="0.0" y="0.0" width="78.333333333333329" height="55"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="88" height="55"/>
                                                 <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="1">
@@ -347,7 +347,7 @@
                                                 </connections>
                                             </button>
                                             <button verifyAmbiguity="ignoreSizes" opaque="NO" tag="3" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="56" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVf-sg-cQa">
-                                                <rect key="frame" x="86.333333333333343" y="0.0" width="78.333333333333343" height="55"/>
+                                                <rect key="frame" x="96" y="0.0" width="88" height="55"/>
                                                 <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="2">
@@ -361,7 +361,7 @@
                                                 </connections>
                                             </button>
                                             <button verifyAmbiguity="ignoreSizes" opaque="NO" tag="4" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="56" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDL-fL-NDZ">
-                                                <rect key="frame" x="172.66666666666666" y="0.0" width="78" height="55"/>
+                                                <rect key="frame" x="192" y="0.0" width="88" height="55"/>
                                                 <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="3">
@@ -375,7 +375,7 @@
                                                 </connections>
                                             </button>
                                             <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="56" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKj-45-HSl">
-                                                <rect key="frame" x="258.66666666666669" y="0.0" width="78.333333333333314" height="55"/>
+                                                <rect key="frame" x="288" y="0.0" width="88" height="55"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="+">
@@ -401,10 +401,10 @@
                                         </variation>
                                     </stackView>
                                     <stackView autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" contentMode="right" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" distribution="fillEqually" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3En-RX-6FW">
-                                        <rect key="frame" x="0.0" y="315" width="337" height="55"/>
+                                        <rect key="frame" x="0.0" y="315" width="376" height="55"/>
                                         <subviews>
                                             <button verifyAmbiguity="ignoreSizes" opaque="NO" tag="1" contentMode="scaleToFill" placeholderIntrinsicWidth="184" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9d-Cg-d3C">
-                                                <rect key="frame" x="0.0" y="0.0" width="78.333333333333329" height="55"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="88" height="55"/>
                                                 <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="0">
@@ -418,7 +418,7 @@
                                                 </connections>
                                             </button>
                                             <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4L-ad-5Bt">
-                                                <rect key="frame" x="86.333333333333343" y="0.0" width="78.333333333333343" height="55"/>
+                                                <rect key="frame" x="96" y="0.0" width="88" height="55"/>
                                                 <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="·">
@@ -432,7 +432,7 @@
                                                 </connections>
                                             </button>
                                             <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khv-WG-1cU">
-                                                <rect key="frame" x="172.66666666666666" y="0.0" width="78" height="55"/>
+                                                <rect key="frame" x="192" y="0.0" width="88" height="55"/>
                                                 <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="±">
@@ -446,7 +446,7 @@
                                                 </connections>
                                             </button>
                                             <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUq-Fq-GVv">
-                                                <rect key="frame" x="258.66666666666669" y="0.0" width="78.333333333333314" height="55"/>
+                                                <rect key="frame" x="288" y="0.0" width="88" height="55"/>
                                                 <color key="backgroundColor" red="1" green="0.1519643792" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="=">
@@ -492,7 +492,7 @@
                                     </mask>
                                 </variation>
                             </stackView>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cg-zU-lkm">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cg-zU-lkm">
                                 <rect key="frame" x="531" y="352" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1209,7 +1209,7 @@
                                     </mask>
                                 </variation>
                             </stackView>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" tag="6" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="56" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mol-at-YbI">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="56" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mol-at-YbI">
                                 <rect key="frame" x="429" y="254" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1224,7 +1224,7 @@
                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b3g-8X-srQ"/>
                                 </connections>
                             </button>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" tag="2" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCJ-36-ZDA">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCJ-36-ZDA">
                                 <rect key="frame" x="327" y="303" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1239,7 +1239,7 @@
                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X7s-nw-sD7"/>
                                 </connections>
                             </button>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" tag="3" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="56" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGR-7J-prk">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="56" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGR-7J-prk">
                                 <rect key="frame" x="429" y="303" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1254,7 +1254,7 @@
                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eoZ-zA-kur"/>
                                 </connections>
                             </button>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" tag="4" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="56" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="in9-Av-o8P">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="56" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="in9-Av-o8P">
                                 <rect key="frame" x="531" y="303" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1269,7 +1269,7 @@
                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QVN-Tb-l0g"/>
                                 </connections>
                             </button>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" tag="1" contentMode="scaleToFill" placeholderIntrinsicWidth="184" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gtp-4f-a9K">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="184" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gtp-4f-a9K">
                                 <rect key="frame" x="327" y="352" width="196" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1284,7 +1284,7 @@
                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ToH-Xs-FUg"/>
                                 </connections>
                             </button>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWE-Y2-zMv">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWE-Y2-zMv">
                                 <rect key="frame" x="633" y="352" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.1519643792" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1299,7 +1299,7 @@
                                     <action selector="equalPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NWv-mY-ZSA"/>
                                 </connections>
                             </button>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" tag="5" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODB-ax-QmI">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODB-ax-QmI">
                                 <rect key="frame" x="327" y="254" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1314,7 +1314,7 @@
                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qZ4-xh-ijY"/>
                                 </connections>
                             </button>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" tag="7" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8U-HF-YK3">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8U-HF-YK3">
                                 <rect key="frame" x="531" y="254" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1329,7 +1329,7 @@
                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sDH-UY-CaQ"/>
                                 </connections>
                             </button>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" tag="8" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvq-wG-NF2">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvq-wG-NF2">
                                 <rect key="frame" x="327" y="205" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1344,7 +1344,7 @@
                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VLy-Ic-FXN"/>
                                 </connections>
                             </button>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" tag="9" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqE-u3-Umh">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqE-u3-Umh">
                                 <rect key="frame" x="429" y="205" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1359,7 +1359,7 @@
                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cg9-ld-aeF"/>
                                 </connections>
                             </button>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" tag="10" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BL6-X1-gXv">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BL6-X1-gXv">
                                 <rect key="frame" x="531" y="205" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1374,7 +1374,7 @@
                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IxV-6Z-mLG"/>
                                 </connections>
                             </button>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40R-Jy-2EG">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40R-Jy-2EG">
                                 <rect key="frame" x="327" y="156" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1389,7 +1389,7 @@
                                     <action selector="backspace:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SUP-n7-FXp"/>
                                 </connections>
                             </button>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uHV-zG-uaI">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uHV-zG-uaI">
                                 <rect key="frame" x="429" y="156" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1404,7 +1404,7 @@
                                     <action selector="plusMinus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yt5-7I-6X4"/>
                                 </connections>
                             </button>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLd-i7-mKQ">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLd-i7-mKQ">
                                 <rect key="frame" x="531" y="156" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1419,7 +1419,7 @@
                                     <action selector="percentegePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZFG-js-9Ga"/>
                                 </connections>
                             </button>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6W-zc-Wh5">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6W-zc-Wh5">
                                 <rect key="frame" x="327" y="107" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1434,7 +1434,7 @@
                                     <action selector="clearPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Azw-cE-bFq"/>
                                 </connections>
                             </button>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d48-OS-Nre">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d48-OS-Nre">
                                 <rect key="frame" x="429" y="107" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1449,7 +1449,7 @@
                                     <action selector="clearMem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i0a-BI-mpO"/>
                                 </connections>
                             </button>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MW0-b9-1tR">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MW0-b9-1tR">
                                 <rect key="frame" x="531" y="107" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1464,7 +1464,7 @@
                                     <action selector="printMemorised:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vBN-ex-y27"/>
                                 </connections>
                             </button>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="54" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bz7-2d-aC5">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="54" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bz7-2d-aC5">
                                 <rect key="frame" x="633" y="107" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1479,7 +1479,7 @@
                                     <action selector="memorisePlus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="be4-Tq-SRY"/>
                                 </connections>
                             </button>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gF1-7n-A5P">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gF1-7n-A5P">
                                 <rect key="frame" x="633" y="156" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1494,7 +1494,7 @@
                                     <action selector="dividePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ywl-OD-2xU"/>
                                 </connections>
                             </button>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYP-vk-ZZ7">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYP-vk-ZZ7">
                                 <rect key="frame" x="633" y="205" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1509,7 +1509,7 @@
                                     <action selector="multiplyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lEa-MR-1Cf"/>
                                 </connections>
                             </button>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEO-ME-HEV">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEO-ME-HEV">
                                 <rect key="frame" x="633" y="254" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1524,7 +1524,7 @@
                                     <action selector="minusPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MeN-E8-BUk"/>
                                 </connections>
                             </button>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="56" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hR-Dc-dCB">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="56" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hR-Dc-dCB">
                                 <rect key="frame" x="633" y="303" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1539,7 +1539,7 @@
                                     <action selector="addPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uGs-D1-nD5"/>
                                 </connections>
                             </button>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAs-Ta-wpV">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAs-Ta-wpV">
                                 <rect key="frame" x="225" y="107" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1554,7 +1554,7 @@
                                     <action selector="piPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KTa-ZZ-11o"/>
                                 </connections>
                             </button>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xij-RE-Qxs">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xij-RE-Qxs">
                                 <rect key="frame" x="123" y="107" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1569,7 +1569,7 @@
                                     <action selector="logPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QAw-MA-GWd"/>
                                 </connections>
                             </button>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWj-Oh-CGI">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWj-Oh-CGI">
                                 <rect key="frame" x="20" y="107" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1584,7 +1584,7 @@
                                     <action selector="sqrtPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sbT-rL-1Tq"/>
                                 </connections>
                             </button>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2k-Ln-QrX">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2k-Ln-QrX">
                                 <rect key="frame" x="123" y="156" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1599,7 +1599,7 @@
                                     <action selector="log2Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="REu-bJ-T2a"/>
                                 </connections>
                             </button>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7r4-sa-jwu">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7r4-sa-jwu">
                                 <rect key="frame" x="225" y="156" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1614,7 +1614,7 @@
                                     <action selector="timesX:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LIp-YL-dLj"/>
                                 </connections>
                             </button>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gD-z7-IIi">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gD-z7-IIi">
                                 <rect key="frame" x="20" y="156" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1629,7 +1629,7 @@
                                     <action selector="stepinbPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pk6-LT-NCu"/>
                                 </connections>
                             </button>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ual-gl-iGa">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ual-gl-iGa">
                                 <rect key="frame" x="225" y="205" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1644,7 +1644,7 @@
                                     <action selector="pow2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WLK-fP-VAC"/>
                                 </connections>
                             </button>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uwO-Y0-KOD">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uwO-Y0-KOD">
                                 <rect key="frame" x="123" y="205" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1659,7 +1659,7 @@
                                     <action selector="functorial:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Du-Va-6yI"/>
                                 </connections>
                             </button>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPy-Ue-6xt">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPy-Ue-6xt">
                                 <rect key="frame" x="20" y="205" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1674,7 +1674,7 @@
                                     <action selector="absPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DvD-59-M3j"/>
                                 </connections>
                             </button>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQV-Ft-BR6">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQV-Ft-BR6">
                                 <rect key="frame" x="20" y="254" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1689,7 +1689,7 @@
                                     <action selector="modPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PqG-F1-4Oi"/>
                                 </connections>
                             </button>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSu-VA-Sxi">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSu-VA-Sxi">
                                 <rect key="frame" x="122" y="254" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1704,7 +1704,7 @@
                                     <action selector="asinPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BTO-00-bcK"/>
                                 </connections>
                             </button>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qpg-WB-wdx">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qpg-WB-wdx">
                                 <rect key="frame" x="225" y="254" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1719,7 +1719,7 @@
                                     <action selector="acos:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BtV-vZ-Dgk"/>
                                 </connections>
                             </button>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGi-vI-9v3">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGi-vI-9v3">
                                 <rect key="frame" x="20" y="303" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1734,7 +1734,7 @@
                                     <action selector="atanPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nh8-Tl-SoX"/>
                                 </connections>
                             </button>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DY6-Bm-MWU">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DY6-Bm-MWU">
                                 <rect key="frame" x="123" y="303" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1747,10 +1747,9 @@
                                 </variation>
                                 <connections>
                                     <action selector="actanPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="enK-MY-lUd"/>
-                                    <action selector="octPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="glt-Ko-kOF"/>
                                 </connections>
                             </button>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XwH-9L-EFu">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XwH-9L-EFu">
                                 <rect key="frame" x="225" y="303" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1765,7 +1764,7 @@
                                     <action selector="sinPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1rL-mB-Un8"/>
                                 </connections>
                             </button>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQ4-tU-VRw">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQ4-tU-VRw">
                                 <rect key="frame" x="20" y="351" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1780,7 +1779,7 @@
                                     <action selector="cosPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RSl-Od-q4A"/>
                                 </connections>
                             </button>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afT-6d-wR6">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afT-6d-wR6">
                                 <rect key="frame" x="123" y="352" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1795,7 +1794,7 @@
                                     <action selector="tanPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ogw-oq-G0a"/>
                                 </connections>
                             </button>
-                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svq-HO-SJb">
+                            <button verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="55" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svq-HO-SJb">
                                 <rect key="frame" x="225" y="353" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1816,19 +1815,19 @@
                                 <state key="normal" title="Button"/>
                             </button>
                             <label verifyAmbiguity="ignoreSizes" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="p8D-Lc-JM2">
-                                <rect key="frame" x="369" y="14" width="368" height="72"/>
+                                <rect key="frame" x="429" y="15" width="302" height="54"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label verifyAmbiguity="ignoreSizes" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLV-eR-yzr">
-                                <rect key="frame" x="583" y="93" width="154" height="0.0"/>
+                                <rect key="frame" x="727" y="77" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MhH-Xj-In8">
-                                <rect key="frame" x="40" y="10" width="172" height="25"/>
+                                <rect key="frame" x="36" y="11" width="156" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Wolfram"/>
@@ -1971,11 +1970,6 @@
                                 <exclude reference="rFh-CE-31c"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="2d3-AH-UWn"/>
-                                <exclude reference="NXg-d9-M3f"/>
-                                <exclude reference="RMA-yM-rnu"/>
-                                <exclude reference="Zsd-lM-x3Y"/>
-                                <exclude reference="jgc-CD-5J6"/>
                                 <exclude reference="Nmp-7L-PxL"/>
                                 <exclude reference="SQ8-3O-qyS"/>
                                 <exclude reference="iH7-Tu-CUT"/>
@@ -1985,11 +1979,16 @@
                                 <exclude reference="DMB-2F-Lfq"/>
                                 <exclude reference="RQS-hX-HMI"/>
                                 <exclude reference="Z5W-0q-4Qi"/>
-                                <exclude reference="Anq-RS-Zeu"/>
+                                <exclude reference="2d3-AH-UWn"/>
+                                <exclude reference="NXg-d9-M3f"/>
+                                <exclude reference="RMA-yM-rnu"/>
+                                <exclude reference="Zsd-lM-x3Y"/>
+                                <exclude reference="jgc-CD-5J6"/>
                                 <exclude reference="4Le-M9-Mi0"/>
                                 <exclude reference="6H9-ec-ujz"/>
                                 <exclude reference="OrO-Im-jrP"/>
                                 <exclude reference="yCi-9J-jFX"/>
+                                <exclude reference="Anq-RS-Zeu"/>
                                 <exclude reference="Gkt-uy-SGa"/>
                                 <exclude reference="Hgv-v9-RAE"/>
                                 <exclude reference="eXW-qm-RpQ"/>
@@ -2007,17 +2006,17 @@
                                 <include reference="OiY-da-ECJ"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="2d3-AH-UWn"/>
-                                <include reference="NXg-d9-M3f"/>
-                                <include reference="RMA-yM-rnu"/>
-                                <include reference="Zsd-lM-x3Y"/>
-                                <include reference="jgc-CD-5J6"/>
                                 <include reference="SQ8-3O-qyS"/>
                                 <include reference="onY-B9-PmL"/>
                                 <exclude reference="2WI-Oa-MUe"/>
                                 <include reference="RQS-hX-HMI"/>
                                 <include reference="Z5W-0q-4Qi"/>
                                 <exclude reference="k8w-qd-uIY"/>
+                                <include reference="2d3-AH-UWn"/>
+                                <include reference="NXg-d9-M3f"/>
+                                <include reference="RMA-yM-rnu"/>
+                                <include reference="Zsd-lM-x3Y"/>
+                                <include reference="jgc-CD-5J6"/>
                                 <include reference="4Le-M9-Mi0"/>
                                 <include reference="6H9-ec-ujz"/>
                                 <exclude reference="JrO-CZ-zz3"/>
@@ -2088,13 +2087,13 @@
                                 <include reference="BSj-O4-u3v"/>
                                 <include reference="DMB-2F-Lfq"/>
                                 <exclude reference="k8w-qd-uIY"/>
-                                <exclude reference="6Wg-rb-Yy5"/>
-                                <include reference="Anq-RS-Zeu"/>
-                                <exclude reference="J8w-oO-8LG"/>
                                 <exclude reference="JrO-CZ-zz3"/>
                                 <include reference="OrO-Im-jrP"/>
                                 <exclude reference="XRv-eM-r9s"/>
                                 <include reference="yCi-9J-jFX"/>
+                                <exclude reference="6Wg-rb-Yy5"/>
+                                <include reference="Anq-RS-Zeu"/>
+                                <exclude reference="J8w-oO-8LG"/>
                                 <exclude reference="3gZ-NY-x9x"/>
                                 <include reference="Gkt-uy-SGa"/>
                                 <include reference="Hgv-v9-RAE"/>
@@ -2122,11 +2121,11 @@
             <objects>
                 <viewController id="xW9-db-Omu" customClass="ViewControllerWolfram" customModule="QuickMath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZFy-dT-jg9">
-                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4B-J3-Uw1">
-                                <rect key="frame" x="0.0" y="0.0" width="239" height="29"/>
+                                <rect key="frame" x="0.0" y="0.0" width="217" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="&lt; Back"/>
@@ -2135,7 +2134,7 @@
                                 </connections>
                             </button>
                             <wkWebView contentMode="scaleToFill" fixedFrame="YES" allowsBackForwardNavigationGestures="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ola-Zp-Evh">
-                                <rect key="frame" x="0.0" y="34" width="812" height="341"/>
+                                <rect key="frame" x="0.0" y="38" width="736" height="376"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">

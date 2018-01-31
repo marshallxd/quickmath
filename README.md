@@ -66,6 +66,8 @@ Supported options
   </tr>
 </table>
 And many more!!!
+
+
 How to use it
 -------------
 You simply press the buttons and hope for it to work...

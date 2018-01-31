@@ -257,6 +257,8 @@ class ViewController: UIViewController {
         operation(operation: .mod1)
     }
  
+    
+    ///////////////////////////////trigonometric functions (in rad)/////////////////
     //asin
     @IBAction func asinPressed(_ sender: UIButton) {
         if runningNumber == ""{
@@ -312,17 +314,14 @@ class ViewController: UIViewController {
             if runningNumber == ""{
                 WarningLabel.text = "Enter number"
             } else {
-                runningNumber = String((1/atan(Double(runningNumber)!)))
+                runningNumber = String((atan(1/(Double(runningNumber)!))))
                 outputLabel.text = runningNumber
             }
         } else{
-            runningNumber = String((1/atan(Double(runningNumber)!)))
+            runningNumber = String((atan(1/(Double(runningNumber)!))))
             outputLabel.text = runningNumber
         }
     }
-    
-    ///////////////////////////////trigonometric functions (in rad)/////////////////
-    
     //sinus
     @IBAction func sinPressed(_ sender: UIButton) {
         if runningNumber == ""{
@@ -338,6 +337,7 @@ class ViewController: UIViewController {
             outputLabel.text = runningNumber
         }
     }
+    
     //cosinus
     @IBAction func cosPressed(_ sender: UIButton) {
         if runningNumber == ""{
@@ -354,6 +354,7 @@ class ViewController: UIViewController {
             outputLabel.text = runningNumber
         }
     }
+    
     //tan
     @IBAction func tanPressed(_ sender: UIButton) {
         if runningNumber == ""{
