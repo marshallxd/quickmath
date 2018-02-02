@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		496585F02025001B00B05124 /* TableViewControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496585EF2025001B00B05124 /* TableViewControll.swift */; };
 		496EB878201BBE6500224A68 /* ViewControllerWolfram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496EB877201BBE6500224A68 /* ViewControllerWolfram.swift */; };
 		497C85D0200D4BB800E65DB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C85CF200D4BB800E65DB5 /* AppDelegate.swift */; };
 		497C85D2200D4BB800E65DB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C85D1200D4BB800E65DB5 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		496585EF2025001B00B05124 /* TableViewControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControll.swift; sourceTree = "<group>"; };
 		496EB877201BBE6500224A68 /* ViewControllerWolfram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerWolfram.swift; sourceTree = "<group>"; };
 		497C85CC200D4BB800E65DB5 /* QuickMath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickMath.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		497C85CF200D4BB800E65DB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				497C85D1200D4BB800E65DB5 /* ViewController.swift */,
 				497C85D3200D4BB800E65DB5 /* Main.storyboard */,
 				496EB877201BBE6500224A68 /* ViewControllerWolfram.swift */,
+				496585EF2025001B00B05124 /* TableViewControll.swift */,
 				497C85D6200D4BB800E65DB5 /* Assets.xcassets */,
 				497C85D8200D4BB800E65DB5 /* LaunchScreen.storyboard */,
 				497C85DB200D4BB800E65DB5 /* Info.plist */,
@@ -264,6 +267,7 @@
 			files = (
 				497C85D2200D4BB800E65DB5 /* ViewController.swift in Sources */,
 				497C85D0200D4BB800E65DB5 /* AppDelegate.swift in Sources */,
+				496585F02025001B00B05124 /* TableViewControll.swift in Sources */,
 				496EB878201BBE6500224A68 /* ViewControllerWolfram.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

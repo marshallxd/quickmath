@@ -20,7 +20,9 @@ enum Operation:String{
     case Sqrt1      = "√x"
     case mod1       = "Mod"
 }
-
+struct globalVirebles{
+    static var dataToPass = ""
+}
 
 class ViewController: UIViewController {
     
@@ -29,6 +31,21 @@ class ViewController: UIViewController {
     @IBOutlet weak var WarningLabel: UILabel!
     
     @IBOutlet weak var mcLabel: UILabel!
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return .lightContent
+    }
+    
+    ///////////////MENU//////////////////////////////////////////////
+    
+    @IBOutlet weak var viewConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var blurView: UIVisualEffectView!
+    
+    @IBOutlet weak var sideView: UIView!
+    
+    
+    //////////////////////////////////////////////////////////////////
     
     var runningNumber = ""
     var leftValue = ""
@@ -433,12 +450,18 @@ class ViewController: UIViewController {
                     result = removeZeroFromEnd(n: Double(result)!)
                     currentOperation = .NULL
                 }
+                globalVirebles.dataToPass = ""
+                globalVirebles.dataToPass += "\(result)"
                 leftValue = result
                 outputLabel.text = result
             }
             currentOperation = operation
+            globalVirebles.dataToPass = ""
+            globalVirebles.dataToPass += "\(result)"
         }else{
             leftValue = runningNumber
+            globalVirebles.dataToPass = ""
+            globalVirebles.dataToPass += "\(result)"
             runningNumber = ""
             currentOperation = operation
         }
@@ -460,14 +483,62 @@ class ViewController: UIViewController {
         return result
     }
     
+    
     ////////////////////////////////////////////////////////////////////
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        blurView.layer.cornerRadius = 15
+        sideView.layer.shadowColor = UIColor.black.cgColor
+        sideView.layer.shadowOpacity = 1
+        sideView.layer.shadowOffset = CGSize (width: 5, height: 0)
+        
+        viewConstraint.constant = -175
+        
+        globalVirebles.dataToPass = ""
         outputLabel.text = "0"
         runningNumber = ""
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
+    @IBAction func penPerform(_ sender: UIPanGestureRecognizer) {
+        if sender.state == .began || sender.state == .changed {
+            let tranlation = sender.translation(in: self.view).x
+            
+            if tranlation > 0 {  // swipe right
+                
+                if viewConstraint.constant < 20{
+                    UIView.animate(withDuration: 0.2, animations: {
+                        self.viewConstraint.constant += tranlation / 10
+                        self.view.layoutIfNeeded()
+                    })
+                }
+                
+            } else { // swipe left
+                if viewConstraint.constant > -175 {
+                    UIView.animate(withDuration: 0.2, animations: {
+                        self.viewConstraint.constant += tranlation / 10
+                        self.view.layoutIfNeeded()
+                    })
+                }
+            }
+            
+        } else if sender.state == .ended {
+            if viewConstraint.constant < -100 {
+                UIView.animate(withDuration: 0.2, animations: {
+                    self.viewConstraint.constant = -175
+                    self.view.layoutIfNeeded()
+                })
+                
+            } else {
+                UIView.animate(withDuration: 0.2, animations: {
+                    self.viewConstraint.constant = 0
+                    self.view.layoutIfNeeded()
+                })
+            }
+        }
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

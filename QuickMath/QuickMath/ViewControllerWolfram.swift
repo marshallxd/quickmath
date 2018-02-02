@@ -17,7 +17,7 @@ class ViewControllerWolfram: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url = URL(string: "https://m.wolframalpha.com")
+        let url = URL(string: "https://github.com/marshallxd/quickmath/blob/master/README.md")
         let request = URLRequest(url: url!)
         
         weblol.load(request)
