@@ -11,20 +11,26 @@ import WebKit
 
 class ViewControllerWolfram: UIViewController {
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        // Show the navigation bar on other view controllers
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
     
     @IBOutlet weak var weblol: WKWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url = URL(string: "https://github.com/marshallxd/quickmath/blob/master/README.md")
+        let url = URL(string: "https://m.wolframalpha.com/")
         let request = URLRequest(url: url!)
         
         weblol.load(request)
         // Do any additional setup after loading the view.
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -25,6 +25,12 @@ class TableViewControll: UIViewController, UITableViewDataSource, UITableViewDel
         smth = ""
     }
     
+    // Show the navigation bar on other view controllers
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return acceptedResult.count

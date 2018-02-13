@@ -35,6 +35,20 @@ class ViewController: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle{
         return .lightContent
     }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Hide the navigation bar on the this view controller
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        // Show the navigation bar on other view controllers
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
     
     ///////////////MENU//////////////////////////////////////////////
     
@@ -57,6 +71,7 @@ class ViewController: UIViewController {
     var tempValue = 1
     var tempValue2 = ""
     
+
     ///////////////////////////////BUTTONS//////////////////////////////////
     //Number pressed
     @IBAction func numberPressed(_ sender: UIButton) {
@@ -403,6 +418,9 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func wolframPressed(_ sender: UIButton) {
+   }
+    
     ///////////////////////////////////////////////////////////////////////
     // OPERATIONS
     func operation(operation: Operation){
@@ -498,6 +516,8 @@ class ViewController: UIViewController {
         globalVirebles.dataToPass = ""
         outputLabel.text = "0"
         runningNumber = ""
+        
+        
     }
     
     @IBAction func penPerform(_ sender: UIPanGestureRecognizer) {
