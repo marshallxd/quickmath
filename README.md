@@ -73,3 +73,14 @@ How to use it
 You simply press the buttons and hope for it to work...
 
 
+<h2>Some screenshots</h2>
+<p>Main view (Vertical)</p>
+<p><a href="https://ibb.co/mjZQi7"><img src="https://image.ibb.co/m00LGS/Screenshot_at_Feb_15_10_26_04.png" alt="Screenshot_at_Feb_15_10_26_04" border="0" /></a></p>
+<p></p>
+<p>Main view (Horizontal)</p>
+<p><a href="https://ibb.co/hQRGqn"><img src="https://preview.ibb.co/fr70GS/Screenshot_at_Feb_15_10_30_23.png" alt="Screenshot_at_Feb_15_10_30_23" border="0" /></a></p>
+<p></p>
+<p>Menu</p>
+<p></p>
+
+
