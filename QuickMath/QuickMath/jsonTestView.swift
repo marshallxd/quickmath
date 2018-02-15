@@ -8,38 +8,64 @@
 
 import UIKit
 
-struct ThreeCitiesWeather: Decodable {
+
+class jsonTestView: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
+    @IBOutlet weak var tableView: UITableView!
     
-    var minsk: City?
-    var madrid: City?
-    var riga: City?
-}
-
-struct City: Decodable {
-    var temperature: String
-    var weather: String
-}
-
-class jsonTestView: UIViewController {
-
+    var hero: HeroStats?
+    
+    
+    var heroes = [HeroStats]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let urlString = "http://swiftbook.ru/json/JSONdata_swift4.json"
-        guard let url = URL(string: urlString) else { return }
         
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
-            
-            guard let data = data else { return }
-            guard error == nil else { return }
-            
-            do{
-            let threeCitiesWeather = try JSONDecoder().decode(ThreeCitiesWeather.self, from: data)
-            print(threeCitiesWeather)
-            } catch let error {
-                print(error)
+        
+        
+        downloadJSON {
+            self.tableView.reloadData()
+        }
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return heroes.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
+        cell.textLabel?.text = heroes[indexPath.row].localized_name.capitalized
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "showDetails", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let dest = segue.destination as? HeroViewController {
+        dest.hero = heroes[(tableView.indexPathForSelectedRow?.row)!]
+        }
+    }
+    
+    func downloadJSON(completed: @escaping () -> ()){
+        
+        let url = URL(string: "https://api.opendota.com/api/heroStats")
+        
+        URLSession.shared.dataTask(with: url!) { (data, response, error) in
+            if error == nil {
+                do {
+                    self.heroes = try JSONDecoder().decode([HeroStats].self, from: data!)
+                    DispatchQueue.main.async {
+                        completed()
+                    }
+                } catch {
+                    print("JSON Error")
+                }
             }
-            
         }.resume()
     }
 

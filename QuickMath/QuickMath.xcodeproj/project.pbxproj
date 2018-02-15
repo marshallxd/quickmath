@@ -17,6 +17,8 @@
 		497C85E5200D4BB800E65DB5 /* QuickMathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C85E4200D4BB800E65DB5 /* QuickMathTests.swift */; };
 		497C85F0200D4BB800E65DB5 /* QuickMathUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C85EF200D4BB800E65DB5 /* QuickMathUITests.swift */; };
 		BF4E1903203616BC004C4C0A /* jsonTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4E1902203616BC004C4C0A /* jsonTestView.swift */; };
+		BF4E19052036433A004C4C0A /* heroStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4E19042036433A004C4C0A /* heroStats.swift */; };
+		BFBFC68C20364FEC00BC6BE2 /* HeroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBFC68B20364FEC00BC6BE2 /* HeroViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		497C85EF200D4BB800E65DB5 /* QuickMathUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickMathUITests.swift; sourceTree = "<group>"; };
 		497C85F1200D4BB800E65DB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF4E1902203616BC004C4C0A /* jsonTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jsonTestView.swift; sourceTree = "<group>"; };
+		BF4E19042036433A004C4C0A /* heroStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = heroStats.swift; sourceTree = "<group>"; };
+		BFBFC68B20364FEC00BC6BE2 /* HeroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,10 +112,12 @@
 				497C85D3200D4BB800E65DB5 /* Main.storyboard */,
 				496EB877201BBE6500224A68 /* ViewControllerWolfram.swift */,
 				496585EF2025001B00B05124 /* TableViewControll.swift */,
+				BF4E1902203616BC004C4C0A /* jsonTestView.swift */,
 				497C85D6200D4BB800E65DB5 /* Assets.xcassets */,
 				497C85D8200D4BB800E65DB5 /* LaunchScreen.storyboard */,
 				497C85DB200D4BB800E65DB5 /* Info.plist */,
-				BF4E1902203616BC004C4C0A /* jsonTestView.swift */,
+				BF4E19042036433A004C4C0A /* heroStats.swift */,
+				BFBFC68B20364FEC00BC6BE2 /* HeroViewController.swift */,
 			);
 			path = QuickMath;
 			sourceTree = "<group>";
@@ -269,8 +275,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				497C85D2200D4BB800E65DB5 /* ViewController.swift in Sources */,
+				BFBFC68C20364FEC00BC6BE2 /* HeroViewController.swift in Sources */,
 				497C85D0200D4BB800E65DB5 /* AppDelegate.swift in Sources */,
 				496585F02025001B00B05124 /* TableViewControll.swift in Sources */,
+				BF4E19052036433A004C4C0A /* heroStats.swift in Sources */,
 				BF4E1903203616BC004C4C0A /* jsonTestView.swift in Sources */,
 				496EB878201BBE6500224A68 /* ViewControllerWolfram.swift in Sources */,
 			);

@@ -2280,13 +2280,77 @@
                     <view key="view" contentMode="scaleToFill" id="0h4-na-tDd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oC4-3I-gug">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oC4-3I-gug" firstAttribute="top" secondItem="rT0-zK-pl1" secondAttribute="top" id="BeX-xi-amh"/>
+                            <constraint firstItem="oC4-3I-gug" firstAttribute="leading" secondItem="rT0-zK-pl1" secondAttribute="leading" id="E0g-1y-fno"/>
+                            <constraint firstItem="rT0-zK-pl1" firstAttribute="bottom" secondItem="oC4-3I-gug" secondAttribute="bottom" id="Tan-aY-GHn"/>
+                            <constraint firstItem="rT0-zK-pl1" firstAttribute="trailing" secondItem="oC4-3I-gug" secondAttribute="trailing" id="bH5-GJ-a41"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="rT0-zK-pl1"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="oC4-3I-gug" id="Z4a-C6-FjQ"/>
+                        <segue destination="mP5-li-Bym" kind="show" identifier="showDetails" id="wQN-eU-HDy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dhQ-cQ-jd7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1049" y="919"/>
+            <point key="canvasLocation" x="1047.8260869565217" y="918.75000000000011"/>
+        </scene>
+        <!--Hero View Controller-->
+        <scene sceneID="hZs-XE-MiH">
+            <objects>
+                <viewController id="mP5-li-Bym" customClass="HeroViewController" customModule="QuickMath" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jme-DV-OW8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P0d-F9-zVX">
+                                <rect key="frame" x="132" y="81" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8o-d3-Zc8">
+                                <rect key="frame" x="20" y="279" width="374" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Attribute" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UB5-ED-bej">
+                                <rect key="frame" x="20" y="326" width="374" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Attack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqI-gD-IjX">
+                                <rect key="frame" x="20" y="373" width="374" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="rak-OM-uGI"/>
+                    </view>
+                    <connections>
+                        <outlet property="attackLbl" destination="tqI-gD-IjX" id="Hqa-n8-xTf"/>
+                        <outlet property="attributeLbl" destination="UB5-ED-bej" id="guu-Dh-CSg"/>
+                        <outlet property="imageView" destination="P0d-F9-zVX" id="V18-Ht-iCp"/>
+                        <outlet property="nameLbl" destination="a8o-d3-Zc8" id="Lev-Qe-fxD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rek-Mc-hW4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1744.9275362318842" y="918.75000000000011"/>
         </scene>
         <!--Wolfram web-->
         <scene sceneID="q8z-q1-2PD">
