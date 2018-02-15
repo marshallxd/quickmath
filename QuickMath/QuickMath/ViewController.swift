@@ -35,20 +35,27 @@ class ViewController: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle{
         return .lightContent
     }
-
+    
+    
+    // Hide the navigation bar on the this view controller
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        // Hide the navigation bar on the this view controller
+        let navigationBar = self.navigationController?.navigationBar
+        navigationBar?.barStyle = UIBarStyle.black
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     
+    
+     // Show the navigation bar on other view controllers
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
-        // Show the navigation bar on other view controllers
+       
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
     }
+    
+    
     
     ///////////////MENU//////////////////////////////////////////////
     

@@ -1879,14 +1879,36 @@
                                                         <segue destination="2PJ-Oo-z42" kind="show" id="EAI-te-unY"/>
                                                     </connections>
                                                 </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UmD-po-b6I">
+                                                    <rect key="frame" x="5" y="189.66666666666669" width="165" height="60"/>
+                                                    <color key="backgroundColor" white="0.66666666669999997" alpha="0.45000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="TCw-1D-Ikw"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <state key="normal" title="JSON Test">
+                                                        <color key="titleColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <integer key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <segue destination="bHf-d4-HEG" kind="show" id="gqm-z8-vJf"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="aBF-DL-afE" secondAttribute="trailing" constant="5" id="6km-E1-FvA"/>
+                                                <constraint firstItem="UmD-po-b6I" firstAttribute="trailing" secondItem="bIj-NZ-UA2" secondAttribute="trailing" id="7zb-jx-UPi"/>
                                                 <constraint firstItem="uAt-VZ-1tq" firstAttribute="top" secondItem="bn7-L4-HFh" secondAttribute="topMargin" id="IHP-bv-A9J"/>
                                                 <constraint firstItem="aBF-DL-afE" firstAttribute="leading" secondItem="bn7-L4-HFh" secondAttribute="leading" constant="5" id="IMX-6b-aO7"/>
                                                 <constraint firstItem="bIj-NZ-UA2" firstAttribute="leading" secondItem="bn7-L4-HFh" secondAttribute="leading" constant="5" id="KAr-ac-opz"/>
+                                                <constraint firstItem="UmD-po-b6I" firstAttribute="leading" secondItem="bIj-NZ-UA2" secondAttribute="leading" id="L6a-NQ-rgw"/>
                                                 <constraint firstItem="aBF-DL-afE" firstAttribute="top" secondItem="uAt-VZ-1tq" secondAttribute="bottom" constant="19" id="X6y-2e-NsK"/>
                                                 <constraint firstItem="uAt-VZ-1tq" firstAttribute="centerX" secondItem="bn7-L4-HFh" secondAttribute="centerX" id="lDm-qY-MEN"/>
+                                                <constraint firstItem="UmD-po-b6I" firstAttribute="top" secondItem="bIj-NZ-UA2" secondAttribute="bottom" constant="7" id="pgH-aw-bxV"/>
                                                 <constraint firstAttribute="trailing" secondItem="bIj-NZ-UA2" secondAttribute="trailing" constant="5" id="sNa-Bx-QqS"/>
                                                 <constraint firstItem="bIj-NZ-UA2" firstAttribute="top" secondItem="aBF-DL-afE" secondAttribute="bottom" constant="8" symbolic="YES" id="yiO-3N-KJ0"/>
                                             </constraints>
@@ -2249,18 +2271,33 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qqv-sR-Mi3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-107.24637681159422" y="853.53260869565224"/>
+            <point key="canvasLocation" x="254" y="919"/>
         </scene>
-        <!--testingWolfram-->
+        <!--Json Test View-->
+        <scene sceneID="YES-to-cOP">
+            <objects>
+                <viewController id="bHf-d4-HEG" customClass="jsonTestView" customModule="QuickMath" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0h4-na-tDd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="rT0-zK-pl1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dhQ-cQ-jd7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1049" y="919"/>
+        </scene>
+        <!--Wolfram web-->
         <scene sceneID="q8z-q1-2PD">
             <objects>
-                <viewController title="testingWolfram" id="xW9-db-Omu" customClass="ViewControllerWolfram" customModule="QuickMath" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Wolfram web" id="xW9-db-Omu" customClass="ViewControllerWolfram" customModule="QuickMath" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZFy-dT-jg9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" fixedFrame="YES" allowsBackForwardNavigationGestures="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ola-Zp-Evh">
-                                <rect key="frame" x="0.0" y="68" width="414" height="668"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
@@ -2296,7 +2333,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wB9-b5-HoS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-858" y="152"/>
+            <point key="canvasLocation" x="-871" y="113"/>
         </scene>
     </scenes>
 </document>
